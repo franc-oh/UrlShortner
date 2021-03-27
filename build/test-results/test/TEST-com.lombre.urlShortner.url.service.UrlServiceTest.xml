@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.lombre.urlShortner.url.service.UrlServiceTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2021-03-27T15:48:45" hostname="OhKyunghun-MacBookAir.local" time="0.545">
+  <properties/>
+  <testcase name="test1_convertUrl_newUrl_success" classname="com.lombre.urlShortner.url.service.UrlServiceTest" time="0.426"/>
+  <testcase name="test2_convertUrl_existUrl_success" classname="com.lombre.urlShortner.url.service.UrlServiceTest" time="0.022"/>
+  <testcase name="test3_convertUrl_fail_urlValidate" classname="com.lombre.urlShortner.url.service.UrlServiceTest" time="0.008"/>
+  <testcase name="test4_redirectOrigUrl_success" classname="com.lombre.urlShortner.url.service.UrlServiceTest" time="0.023"/>
+  <testcase name="test5_redirectOrigUrl_fail_notExistsUrl" classname="com.lombre.urlShortner.url.service.UrlServiceTest" time="0.007"/>
+  <system-out><![CDATA[00:48:38.891 [Test worker] DEBUG org.springframework.test.context.junit4.SpringJUnit4ClassRunner - SpringJUnit4ClassRunner constructor called with [class com.lombre.urlShortner.url.service.UrlServiceTest]
+00:48:38.896 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+00:48:38.902 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+00:48:38.952 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [com.lombre.urlShortner.url.service.UrlServiceTest] from class [org.springframework.boot.test.context.SpringBootTestContextBootstrapper]
+00:48:38.963 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.lombre.urlShortner.url.service.UrlServiceTest], using SpringBootContextLoader
+00:48:38.967 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.lombre.urlShortner.url.service.UrlServiceTest]: class path resource [com/lombre/urlShortner/url/service/UrlServiceTest-context.xml] does not exist
+00:48:38.968 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.lombre.urlShortner.url.service.UrlServiceTest]: class path resource [com/lombre/urlShortner/url/service/UrlServiceTestContext.groovy] does not exist
+00:48:38.968 [Test worker] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.lombre.urlShortner.url.service.UrlServiceTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+00:48:38.969 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.lombre.urlShortner.url.service.UrlServiceTest]: UrlServiceTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+00:48:39.029 [Test worker] DEBUG org.springframework.test.context.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [com.lombre.urlShortner.url.service.UrlServiceTest]
+00:48:39.151 [Test worker] DEBUG org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider - Identified candidate component class: file [/Users/okh/UrlShortner/build/classes/java/main/com/lombre/urlShortner/Application.class]
+00:48:39.153 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.lombre.urlShortner.Application for test class com.lombre.urlShortner.url.service.UrlServiceTest
+00:48:39.288 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - @TestExecutionListeners is not present for class [com.lombre.urlShortner.url.service.UrlServiceTest]: using defaults.
+00:48:39.289 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+00:48:39.300 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@493323f, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@5a7d935d, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@3741d9bb, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@35e289be, org.springframework.test.context.support.DirtiesContextTestExecutionListener@287d57f7, org.springframework.test.context.transaction.TransactionalTestExecutionListener@1e2ccede, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@279950a1, org.springframework.test.context.event.EventPublishingTestExecutionListener@6979295, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@4497bf5f, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@3c35c32d, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@51448052, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@6bfdb3d5, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@12e984b2, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@571169]
+00:48:39.302 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.lombre.urlShortner.url.service.UrlServiceTest]
+00:48:39.304 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.lombre.urlShortner.url.service.UrlServiceTest]
+00:48:39.306 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.lombre.urlShortner.url.service.UrlServiceTest]
+00:48:39.306 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.lombre.urlShortner.url.service.UrlServiceTest]
+00:48:39.308 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.lombre.urlShortner.url.service.UrlServiceTest]
+00:48:39.308 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.lombre.urlShortner.url.service.UrlServiceTest]
+00:48:39.309 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.lombre.urlShortner.url.service.UrlServiceTest]
+00:48:39.309 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.lombre.urlShortner.url.service.UrlServiceTest]
+00:48:39.310 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.lombre.urlShortner.url.service.UrlServiceTest]
+00:48:39.310 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.lombre.urlShortner.url.service.UrlServiceTest]
+00:48:39.313 [Test worker] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: context [DefaultTestContext@6997b9b1 testClass = UrlServiceTest, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@700cf7eb testClass = UrlServiceTest, locations = '{}', classes = '{class com.lombre.urlShortner.Application}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@2218a9b5, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@334b99f3, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@8173486, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@10d7265d, org.springframework.boot.test.context.SpringBootTestArgs@1, org.springframework.boot.test.context.SpringBootTestWebEnvironment@141c57f9], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -> true]], class annotated with @DirtiesContext [false] with mode [null].
+00:48:39.314 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.lombre.urlShortner.url.service.UrlServiceTest]
+00:48:39.314 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.lombre.urlShortner.url.service.UrlServiceTest]
+00:48:39.343 [Test worker] DEBUG org.springframework.test.context.support.TestPropertySourceUtils - Adding inlined properties to environment: {spring.jmx.enabled=false, org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.3.7.RELEASE)
+
+2021-03-28 00:48:39.704  INFO 6776 --- [    Test worker] c.l.u.url.service.UrlServiceTest         : Starting UrlServiceTest on OhKyunghun-MacBookAir.local with PID 6776 (started by okh in /Users/okh/UrlShortner)
+2021-03-28 00:48:39.705  INFO 6776 --- [    Test worker] c.l.u.url.service.UrlServiceTest         : The following profiles are active: test
+2021-03-28 00:48:40.638  INFO 6776 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-03-28 00:48:40.755  INFO 6776 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 108ms. Found 1 JPA repository interfaces.
+2021-03-28 00:48:41.719  INFO 6776 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-03-28 00:48:41.755  INFO 6776 --- [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.25.Final
+2021-03-28 00:48:41.844  INFO 6776 --- [    Test worker] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-03-28 00:48:42.013  INFO 6776 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-03-28 00:48:42.312  INFO 6776 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-03-28 00:48:42.347  INFO 6776 --- [    Test worker] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+Hibernate: drop table if exists tb_url CASCADE 
+Hibernate: drop sequence if exists url_seq
+Hibernate: create sequence url_seq start with 1000000001 increment by 1
+Hibernate: create table tb_url (id bigint not null, convert_cnt bigint not null, convert_url varchar(255), orig_url varchar(255) not null, primary key (id))
+2021-03-28 00:48:42.852  INFO 6776 --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-03-28 00:48:42.858  INFO 6776 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-03-28 00:48:43.994  WARN 6776 --- [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-03-28 00:48:44.463  INFO 6776 --- [    Test worker] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-28 00:48:44.598  INFO 6776 --- [    Test worker] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./test_db'
+2021-03-28 00:48:44.744  INFO 6776 --- [    Test worker] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-03-28 00:48:45.216  INFO 6776 --- [    Test worker] c.l.u.url.service.UrlServiceTest         : Started UrlServiceTest in 5.864 seconds (JVM running for 7.053)
+=========================== 1
+Hibernate: select url0_.id as col_0_0_ from tb_url url0_ where url0_.orig_url=? limit ?
+Hibernate: call next value for url_seq
+Hibernate: insert into tb_url (convert_cnt, convert_url, orig_url, id) values (?, ?, ?, ?)
+Hibernate: update tb_url set convert_cnt=?, convert_url=?, orig_url=? where id=?
+Hibernate: select url0_.id as id1_0_, url0_.convert_cnt as convert_2_0_, url0_.convert_url as convert_3_0_, url0_.orig_url as orig_url4_0_ from tb_url url0_
+Hibernate: delete from tb_url where id=?
+=========================== 2
+Hibernate: call next value for url_seq
+Hibernate: insert into tb_url (convert_cnt, convert_url, orig_url, id) values (?, ?, ?, ?)
+Hibernate: select url0_.id as col_0_0_ from tb_url url0_ where url0_.orig_url=? limit ?
+Hibernate: select url0_.id as id1_0_, url0_.convert_cnt as convert_2_0_, url0_.convert_url as convert_3_0_, url0_.orig_url as orig_url4_0_ from tb_url url0_ where url0_.orig_url=?
+Hibernate: update tb_url set convert_cnt=?, convert_url=?, orig_url=? where id=?
+Hibernate: select url0_.id as id1_0_, url0_.convert_cnt as convert_2_0_, url0_.convert_url as convert_3_0_, url0_.orig_url as orig_url4_0_ from tb_url url0_
+Hibernate: delete from tb_url where id=?
+Hibernate: select url0_.id as id1_0_, url0_.convert_cnt as convert_2_0_, url0_.convert_url as convert_3_0_, url0_.orig_url as orig_url4_0_ from tb_url url0_
+Hibernate: call next value for url_seq
+Hibernate: insert into tb_url (convert_cnt, convert_url, orig_url, id) values (?, ?, ?, ?)
+Hibernate: select url0_.id as col_0_0_ from tb_url url0_ where url0_.convert_url=? limit ?
+Hibernate: select url0_.id as id1_0_, url0_.convert_cnt as convert_2_0_, url0_.convert_url as convert_3_0_, url0_.orig_url as orig_url4_0_ from tb_url url0_ where url0_.convert_url=?
+Hibernate: select url0_.id as id1_0_, url0_.convert_cnt as convert_2_0_, url0_.convert_url as convert_3_0_, url0_.orig_url as orig_url4_0_ from tb_url url0_
+Hibernate: delete from tb_url where id=?
+Hibernate: select url0_.id as col_0_0_ from tb_url url0_ where url0_.convert_url=? limit ?
+Hibernate: select url0_.id as id1_0_, url0_.convert_cnt as convert_2_0_, url0_.convert_url as convert_3_0_, url0_.orig_url as orig_url4_0_ from tb_url url0_
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
