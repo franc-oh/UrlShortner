@@ -1,4 +1,0 @@
-com/lombre/urlShortner/util/EncodeUtilsTest.java
- com.lombre.urlShortner.util.EncodeUtilsTest
-com/lombre/urlShortner/url/service/UrlServiceTest.java
- com.lombre.urlShortner.url.service.UrlServiceTest
