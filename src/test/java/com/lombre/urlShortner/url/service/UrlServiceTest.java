@@ -40,8 +40,7 @@ public class UrlServiceTest {
      * @throws Exception
      */
     @Test
-    public void test1_convertUrl_newUrl_success() throws Exception{
-        System.out.println("=========================== 1");
+    public void test1_convertUrl_newUrl_success() throws Exception {
         String origUrl = "https://en.wikipedia.org/wiki/URL_shortening";
         String chkResultCode = "0000";
         String chkConvertUrl = SERVICE_URL_DOMAIN + EncodeUtils.base62Encoding(1000000001L);
@@ -61,8 +60,7 @@ public class UrlServiceTest {
      * @throws Exception
      */
     @Test
-    public void test2_convertUrl_existUrl_success() throws Exception{
-        System.out.println("=========================== 2");
+    public void test2_convertUrl_existUrl_success() throws Exception {
         String origUrl = "https://en.wikipedia.org/wiki/URL_shortening";
         String convertUrl = SERVICE_URL_DOMAIN + EncodeUtils.base62Encoding(1000000001L);
         String chkResultCode = "0000";

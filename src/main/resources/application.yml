@@ -8,12 +8,15 @@ server:
 
 spring:
   profiles:
-    active: test
+    active: local
 
 ---
-## TEST
+## LOCAL PROP
+server:
+  port: 8080
+
 spring:
-  profiles: test
+  profiles: local
 
   jpa:
     show-sql: true
@@ -35,6 +38,6 @@ spring:
 
 prop:
   service:
-    domain: http://localhost:8080/
+    domain: http://localhost:${server.port}/
     url:
       domain: ${prop.service.domain}url/
